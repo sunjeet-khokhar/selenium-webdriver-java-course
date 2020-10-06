@@ -22,6 +22,9 @@ public class LoginPage {
         driver.findElement(Password).sendKeys(Pwd);
     }
 
-
+    public SecureAreaPage ClickLogin(){
+        driver.findElement(LoginButton).click();
+        return new SecureAreaPage(driver);
+    }
 
 }

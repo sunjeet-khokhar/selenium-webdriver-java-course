@@ -32,8 +32,9 @@ public class BaseTest_1 {
         try {
             driver.get("https://the-internet.herokuapp.com/login");
             LoginPage page = new LoginPage(driver);
-            page.EnterUserName("honky-tonk");
-            page.EnterPassword("Tonky-honk");
+            page.EnterUserName("tomsmith");
+            page.EnterPassword("SuperSecretPassword!");
+            page.ClickLogin();
         }
 
         catch (Exception e) {
